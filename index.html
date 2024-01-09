@@ -1,28 +1,296 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="artwork.css">
+    <script type="module" src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="title">
-            <p class="title-name"> TAREQ AGHANNOU </p>
-            <p class="title-work-title"> Character artist </p>
+            <a href="index.html" class="title-name">TAREQ AGHANNOU</a>
+            <p class="title-work-title">CHARACTER ARTIST</p>
         </div>
         <div class="nav">
-            <a>projects</a>
-            <a>resume</a>   
-            <a>contact</a>
+            <span onclick="transitionToPage('index.html')" id="nav-artwork">artwork</span>
+            <span onclick="transitionToPage('resume.html')" id="nav-resume">resume</span>
+            <a id="nav-contact" href="mailto:pro@tareqitos.com">contact</a>
         </div>
     </header>
 
-    <footer>
-        
-    </footer>
+    <main>
+        <section class="section-portfolio">
+            <div class="portfolio-grid">
+                <h1>fig - a playtient journey</h1>
+                <div class="portfolio-grid-fig">
+                    <div class="portfolio-items" id="fig-item-0">
+                        <a href="">
+                            <img src="img/fig/fig-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Fig</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="fig-item-1">
+                        <a href="">
+                            <img src="img/fig/murfon-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Fig -Murfon</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="fig-item-2">
+                        <a href="">
+                            <img src="img/fig/spaceship-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Fig - Spaceship</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="fig-item-3">
+                        <a href="">
+                            <img src="img/fig/world-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Fig - World</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="fig-item-4">
+                        <a href="">
+                            <img src="img/fig/assets_thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Fig - Assets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <h1>Tiger Run 3D</h1>
+                <div class="portfolio-grid-tr3d">
+                    <div class="portfolio-items" id="tr3d-item-0">
+                        <a href="">
+                            <img src="img/tr3d/min-tigre.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Tiger</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="tr3d-item-1">
+                        <a href="">
+                            <img src="img/tr3d/min-garde.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Guard</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="tr3d-item-2">
+                        <a href="">
+                            <img src="img/tr3d/min-parrot.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Parrot</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="tr3d-item-3">
+                        <a href="">
+                            <img src="img/tr3d/min-aigle.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Eagle</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="tr3d-item-4">
+                        <a href="">
+                            <img src="img/tr3d/min-turtle.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Turtle</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="tr3d-item-5">
+                        <a href="">
+                            <img src="img/tr3d/min-rhino.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Tiger Run - Rhino</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="portfolio-grid">
+                <h1>Characters</h1>
+                <div class="portfolio-grid-char">
+                    <div class="portfolio-items" id="char-item-0">
+                        <a href="">
+                            <img src="img/char/noriko-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Noriko</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-1">
+                        <a href="">
+                            <img src="img/char/mononoke-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Mononoke</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-2">
+                        <a href="">
+                            <img src="img/char/naomi-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Naomi</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-3">
+                        <a href="">
+                            <img src="img/char/girl-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Girl</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-4">
+                        <a href="">
+                            <img src="img/char/lynn-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Lynn</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-5">
+                        <a href="">
+                            <img src="img/char/cg3d-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Cyborg Girl 3D</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-6">
+                        <a href="">
+                            <img src="img/char/1Q84-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>1Q84</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-7">
+                        <a href="">
+                            <img src="img/char/lady-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Lady</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-items" id="char-item-8">
+                        <a href="">
+                            <img src="img/char/rufus-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Rufus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <h1>Creatures</h1>
+                <div class="portfolio-grid-crea">
+                    <div class="portfolio-items" id="crea-item-0">
+                        <a href="">
+                            <img src="img/crea/mune-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Mune</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-items" id="crea-item-1">
+                        <a href="">
+                            <img src="img/crea/shenron-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Shenron</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-items" id="crea-item-2">
+                        <a href="">
+                            <img src="img/crea/apus-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Apus</p>
+                        </div>
+                    </div>
+ 
+                    <div class="portfolio-items" id="crea-item-3">
+                        <a href="">
+                            <img src="img/crea/sushi-thumb.png">
+                        </a>
+                        <div class="thumb-text">
+                            <p>meow</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-items" id="crea-item-4">
+                        <a href="">
+                            <img src="img/crea/bull-thumb.jpg">
+                        </a>
+                        <div class="thumb-text">
+                            <p>Bull</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-contact">
+            <div class="portfolio-contact-text">
+                <p class="portfolio-contact-text-contactme">CONTACT ME</p>
+                <div class="portfolio-contact-title">
+                    <p class="portfolio-contact-title-name">Tareq Aghannou</p>
+                    <p class="portfolio-contact-title-job">Character Artist</p>
+                </div>
+                <a class="portfolio-contact-mail" href="mailto:pro@tareqitos.com">pro@tareqitos.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-items">
+            <p>© All rights reserved - Tareqitos</p>
+            <div class="footer-links">
+                <a href="https://www.artstation.com/tareqitos" target="_blank"><img src="img/icons/artstation.png" alt="Arstation"></a>
+                <a href="https://sketchfab.com/tareqitos" target="_blank"><img src="img/icons/sketchfab.png" alt="Sketchfab"></a>
+                <a href="https://www.linkedin.com/in/tareqitos/" target="_blank"><img src="img/icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <p>Top</p>
+        </div>
+    </footer>
 </body>
 </html>
+
+<!--
+    <div class="portfolio-grid">
+        <h1></h1>
+        <div class="portfolio-grid-">
+            <div class="portfolio-items" id="-item-0">
+                <a href="">
+                    <img src="">
+                </a>
+                <div class="thumb-text">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
