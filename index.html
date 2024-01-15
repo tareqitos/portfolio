@@ -2,13 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="artwork.css">
-    <script type="module" src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Tareq Aghannou - Portfolio">
+    <meta name="keywords" content="tareq aghannou, tareq, aghannou, portfolio, art, 3d artist, character artist, 3d character artist, video games, game artist, 3d game artist, art, fig, tiger run 3d, fan art">
+    <meta name="author" content="Tareqitos">
+
+    <!-- Open Graph Meta Tag -->
+    <meta property="og:title" content="Târeq Aghannou">
+    <meta property="og:description" content="Tareq Aghannou - Portfolio">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://tareqitos.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/artwork.css" />
+    <link rel="stylesheet" href="css/media-global.css" />
+    <link rel="stylesheet" href="css/media-artwork.css" />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/41df70c030.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Târeq Aghannou - Portfolio</title>
 </head>
 
 <body>
@@ -18,8 +33,8 @@
             <p class="title-work-title">CHARACTER ARTIST</p>
         </div>
         <div class="nav">
-            <a onclick="transitionToPage('index.html')" href="index.html" id="nav-artwork">artwork</a>
-            <a onclick="transitionToPage('resume.html')" href="resume.html" id="nav-resume">resume</a>
+            <a href="index.html" class="transition" id="nav-artwork">artwork</a>
+            <a href="resume.html" class="transition" id="nav-resume">about</a>
             <a id="nav-contact" href="mailto:pro@tareqitos.com">contact</a>
         </div>
     </header>
@@ -28,228 +43,253 @@
         <section class="section-portfolio">
             <div class="portfolio-grid">
                 <h1>fig - a playtient journey</h1>
-                <div class="portfolio-grid-fig">
+                <div class="portfolio-grid-fig grid">
                     <div class="portfolio-items" id="fig-item-0">
-                        <a href="">
-                            <img src="img/artwork/fig/fig-thumb.png">
+                        <a href="fig/fig/fig.html" class="transition">
+                            <img src="img/artwork/fig/fig-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Fig</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Fig</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="fig-item-1">
-                        <a href="">
-                            <img src="img/artwork/fig/murfon-thumb.png">
+                        <a href="fig/murfon/murfon.html" class="transition">
+                            <img src="img/artwork/fig/murfon-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Fig -Murfon</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Fig -Murfon</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="fig-item-2">
-                        <a href="">
-                            <img src="img/artwork/fig/spaceship-thumb.png">
+                        <a href="fig/spaceship/spaceship.html" class="transition">
+                            <img src="img/artwork/fig/spaceship-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Fig - Spaceship</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Fig - Spaceship</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="fig-item-3">
-                        <a href="">
-                            <img src="img/artwork/fig/world-thumb.png">
+                        <a href="fig/asteroid/asteroid.html" class="transition">
+                            <img src="img/artwork/fig/world-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Fig - Asteroid</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Fig - World</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="fig-item-4">
-                        <a href="">
-                            <img src="img/artwork/fig/assets_thumb.png">
+                        <a href="fig/custom/custom.html" class="transition">
+                            <img src="img/artwork/fig/assets_thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Fig - Assets</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Fig - Assets</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-            
+
             <div class="portfolio-grid">
                 <h1>Tiger Run 3D</h1>
-                <div class="portfolio-grid-tr3d">
+                <div class="portfolio-grid-tr3d grid">
                     <div class="portfolio-items" id="tr3d-item-0">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-tigre.png">
+                        <a href="tr3d/tiger/tiger.html" class="transition">
+                            <img src="img/artwork/tr3d/min-tigre.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Tiger</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Tiger</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="tr3d-item-1">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-garde.png">
+                        <a href="tr3d/guard/guard.html" class="transition">
+                            <img src="img/artwork/tr3d/min-garde.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Guard</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Guard</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="tr3d-item-2">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-parrot.png">
+                        <a href="tr3d/parrot/parrot.html" class="transition">
+                            <img src="img/artwork/tr3d/min-parrot.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Parrot</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Parrot</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="tr3d-item-3">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-aigle.png">
+                        <a href="tr3d/eagle/eagle.html" class="transition">
+                            <img src="img/artwork/tr3d/min-aigle.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Eagle</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Eagle</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="tr3d-item-4">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-turtle.png">
+                        <a href="tr3d/turtle/turtle.html" class="transition">
+                            <img src="img/artwork/tr3d/min-turtle.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Turtle</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Turtle</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="tr3d-item-5">
-                        <a href="">
-                            <img src="img/artwork/tr3d/min-rhino.png">
+                        <a href="tr3d/rhino/rhino.html" class="transition">
+                            <img src="img/artwork/tr3d/min-rhino.jpg" />
+                            <div class="thumb-text">
+                                <p>Tiger Run - Rhino</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Tiger Run - Rhino</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-grid">
                 <h1>Characters</h1>
-                <div class="portfolio-grid-char">
+                <div class="portfolio-grid-char grid">
                     <div class="portfolio-items" id="char-item-0">
-                        <a href="">
-                            <img src="img/artwork/char/noriko-thumb.jpg">
+                        <a href="char/noriko/noriko.html" class="transition">
+                            <img src="img/artwork/char/noriko-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Noriko</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Noriko</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-1">
-                        <a href="">
-                            <img src="img/artwork/char/mononoke-thumb.png">
+                        <a href="char/mononoke/mononoke.html" class="transition">
+                            <img src="img/artwork/char/mononoke-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Mononoke</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Mononoke</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-2">
-                        <a href="">
-                            <img src="img/artwork/char/naomi-thumb.png">
+                        <a href="char/naomi/naomi.html" class="transition">
+                            <img src="img/artwork/char/naomi-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Naomi</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Naomi</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-3">
-                        <a href="">
-                            <img src="img/artwork/char/girl-thumb.jpg">
+                        <a href="char/girl/girl.html" class="transition">
+                            <img src="img/artwork/char/girl-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Girl</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Girl</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-4">
-                        <a href="">
-                            <img src="img/artwork/char/lynn-thumb.jpg">
+                        <a href="char/lynn/lynn.html" class="transition">
+                            <img src="img/artwork/char/lynn-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Lynn</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Lynn</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-5">
-                        <a href="">
-                            <img src="img/artwork/char/cg3d-thumb.jpg">
+                        <a href="char/cg3d/cg3d.html" class="transition">
+                            <img src="img/artwork/char/cg3d-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Cyborg Girl 3D</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Cyborg Girl 3D</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-6">
-                        <a href="">
-                            <img src="img/artwork/char/1Q84-thumb.png">
+                        <a href="char/1Q84/1Q84.html" class="transition">
+                            <img src="img/artwork/char/1Q84-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>1Q84</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>1Q84</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-7">
-                        <a href="">
-                            <img src="img/artwork/char/lady-thumb.png">
+                        <a href="char/lady/lady.html" class="transition">
+                            <img src="img/artwork/char/lady-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Lady</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Lady</p>
-                        </div>
+                        
                     </div>
                     <div class="portfolio-items" id="char-item-8">
-                        <a href="">
-                            <img src="img/artwork/char/rufus-thumb.png">
+                        <a href="char/rufus/rufus.html" class="transition">
+                            <img src="img/artwork/char/rufus-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Rufus</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Rufus</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-grid">
                 <h1>Creatures</h1>
-                <div class="portfolio-grid-crea">
+                <div class="portfolio-grid-crea grid">
                     <div class="portfolio-items" id="crea-item-0">
-                        <a href="">
-                            <img src="img/artwork/crea/mune-thumb.jpg">
+                        <a href="crea/mune/mune.html" class="transition">
+                            <img src="img/artwork/crea/mune-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Mune</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Mune</p>
-                        </div>
+                        
                     </div>
 
                     <div class="portfolio-items" id="crea-item-1">
-                        <a href="">
-                            <img src="img/artwork/crea/shenron-thumb.png">
+                        <a href="crea/shenron/shenron.html" class="transition">
+                            <img src="img/artwork/crea/shenron-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Shenron</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Shenron</p>
-                        </div>
+                        
                     </div>
 
                     <div class="portfolio-items" id="crea-item-2">
-                        <a href="">
-                            <img src="img/artwork/crea/apus-thumb.jpg">
+                        <a href="crea/apus/apus.html" class="transition">
+                            <img src="img/artwork/crea/apus-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Apus</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Apus</p>
-                        </div>
+                        
                     </div>
- 
+
                     <div class="portfolio-items" id="crea-item-3">
-                        <a href="">
-                            <img src="img/artwork/crea/sushi-thumb.png">
+                        <a href="crea/chasushi/chasushi.html" class="transition">
+                            <img src="img/artwork/crea/sushi-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>meow</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>meow</p>
-                        </div>
+                        
                     </div>
 
                     <div class="portfolio-items" id="crea-item-4">
-                        <a href="">
-                            <img src="img/artwork/crea/bull-thumb.jpg">
+                        <a href="crea/bull/bull.html" class="transition">
+                            <img src="img/artwork/crea/bull-thumb.jpg" />
+                            <div class="thumb-text">
+                                <p>Bull</p>
+                            </div>
                         </a>
-                        <div class="thumb-text">
-                            <p>Bull</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -258,7 +298,7 @@
             <div class="portfolio-contact-text">
                 <p class="portfolio-contact-text-contactme">CONTACT ME</p>
                 <div class="portfolio-contact-title">
-                    <p class="portfolio-contact-title-name">Tareq Aghannou</p>
+                    <p class="portfolio-contact-title-name">Târeq Aghannou</p>
                     <p class="portfolio-contact-title-job">Character Artist</p>
                 </div>
                 <a class="portfolio-contact-mail" href="mailto:pro@tareqitos.com">pro@tareqitos.com</a>
@@ -270,14 +310,16 @@
         <div class="footer-items">
             <p>© All rights reserved - Tareqitos</p>
             <div class="footer-links">
-                <a href="https://www.artstation.com/tareqitos" target="_blank"><i class="fa-brands fa-artstation"></i></a>
-                <a href="https://www.linkedin.com/tareqitos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.artstation.com/tareqitos" target="_blank"><i
+                        class="fa-brands fa-artstation"></i></a>
+                <a href="https://www.linkedin.com/tareqitos" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/tareqitos" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <p>Top</p>
         </div>
     </footer>
 </body>
+
 </html>
 
 <!--

@@ -1,221 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="resume.css">
-        <script type="module" src="script.js" defer></script>
-        <script src="https://kit.fontawesome.com/41df70c030.js" crossorigin="anonymous"></script>
-        <title>Portfolio</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header>
-            <div class="title">
-                <a href="index.html" class="title-name">TAREQ AGHANNOU</a>
-                <p class="title-work-title">CHARACTER ARTIST</p>
+    <meta name="description" content="Tareq Aghannou - Portfolio">
+    <meta name="keywords"content="tareq aghannou, tareq, aghannou, portfolio, art, 3d artist, character artist, 3d character artist, video games, game artist, 3d game artist, art, fig, tiger run 3d, fan art">
+    <meta name="author" content="Tareqitos">
+
+    <!-- Open Graph Meta Tag -->
+    <meta property="og:title" content="Târeq Aghannou">
+    <meta property="og:description" content="Tareq Aghannou - About">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://tareqitos.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/media-global.css">
+    <link rel="stylesheet" href="css/media-resume.css">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/41df70c030.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a href="index.html" class="title-name">TAREQ AGHANNOU</a>
+            <p class="title-work-title">CHARACTER ARTIST</p>
+        </div>
+        <div class="nav">
+            <a href="index.html" class="transition" id="nav-artwork">artwork</a>
+            <a href="resume.html" class="transition" id="nav-resume">about</a>
+            <a id="nav-contact" href="mailto:pro@tareqitos.com">contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="resume-about">
+            <div class="resume-about-container">
+                <div class="resume-about-picture-container">
+                    <div class="resume-about-picture">
+                        <img src="img/resume/tareq-profile.jpg">
+                    </div>
+                </div>
+                <div class="resume-about-text-container">
+                    <p class="resume-about-text-name">Târeq Aghannou</p>
+                    <p class="resume-about-text-title">Character Artist</p>
+                    <p> As a 3D artist, I specialise in character modeling
+                        and animation. I've worked with a variety of
+                        software programs including Maya, ZBrush, and Unity,
+                        and I'm always seeking out new tools and
+                        techniques to enhance my work.
+                    </p>
+                    <p> In the past, I've had the opportunity to work on
+                        amazing games and projects, including an
+                        animated movie. I love collaborating with other
+                        artists and pushing myself out of my comfort
+                        zone. I'm constantly striving to improve my skills
+                        and create better art.
+                    </p>
+                </div>
             </div>
-            <div class="nav">
-                <a onclick="transitionToPage('index.html')" href="index.html" id="nav-artwork">artwork</a>
-                <a onclick="transitionToPage('resume.html')" href="resume.html" id="nav-resume">resume</a>
-                <a id="nav-contact" href="mailto:pro@tareqitos.com">contact</a>
+
+            <div class="resume-about-links">
+                <div class="resume-about-links-location">
+                    <a class="resume-links"
+                        href="https://www.google.com/maps/@50.8409792,4.3588233,11.83z?entry=ttu"><span
+                            class="fa-solid fa-location-dot"></span>Brussels, Belgium</a>
+                </div>
+                <div class="resume-about-links-mail">
+                    <a class="resume-links" href="mailto:pro@tareqitos.com"><span
+                            class="far fa-envelope icon-pad-right"></span>pro@tareqitos.com</a>
+                </div>
+                <div class="resume-about-links-resume">
+                    <a class="resume-links" href="doc/Tareq Aghannou-CV.pdf"><span
+                            class="fa-regular fa-file"></span>resume</a>
+                </div>
+                <div class="resume-about-links-social">
+                    <a href="https://www.artstation.com/tareqitos" target="_blank"><i
+                            class="fa-brands fa-artstation"></i></a>
+                    <a href="https://www.linkedin.com/tareqitos" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/tareqitos" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <section class="resume-about">
-                <div class="resume-about-container">
-                    <div class="resume-about-picture-container">
-                        <div class="resume-about-picture">
-                            <img src="img/resume/tareq-profile.jpg">
+        <section class="section-experience">
+            <div class="experience-container-wrapper">
+                <h1>Experiences</h1>
+                <div class="experience-container">
+                    <div class="experience-container-items">
+                        <div class="experience-items" id="exp-item-1">
+                            <h2>3D Artist at Mindforce Game Lab</h2>
+                            <p>Göteborg, Sweden 🇸🇪</p>
+                            <p>May 2022 - June 2023</p>
                         </div>
-                    </div>
-                    <div class="resume-about-text-container">
-                        <p class="resume-about-text-name">Târeq Aghannou</p>
-                        <p class="resume-about-text-title">Character Artist</p>
-                        <p> As a 3D artist, I specialise in character modeling
-                            and animation. I've worked with a variety of
-                            software programs including Maya, ZBrush, and Unity,
-                            and I'm always seeking out new tools and
-                            techniques to enhance my work.
-                        </p>
-                        <p> In the past, I've had the opportunity to work on
-                            amazing games and projects, including an
-                            animated movie. I love collaborating with other
-                            artists and pushing myself out of my comfort
-                            zone. I'm constantly striving to improve my skills
-                            and create better art.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="resume-about-links">
-                    <div class="resume-about-links-location">
-                        <a class="resume-links" href="https://www.google.com/maps/@50.8409792,4.3588233,11.83z?entry=ttu"><span class="fa-solid fa-location-dot"></span>Brussels, Belgium</a>
-                    </div>
-                    <div class="resume-about-links-mail">
-                        <a class="resume-links" href="mailto:pro@tareqitos.com"><span class="far fa-envelope icon-pad-right"></span>pro@tareqitos.com</a>
-                    </div>
-                    <div class="resume-about-links-resume">
-                        <a class="resume-links" href="doc/Tareq Aghannou-CV.pdf"><span class="fa-regular fa-file"></span>resume</a>
-                    </div>
-                    <div class="resume-about-links-social">
-                        <a href="https://www.artstation.com/tareqitos" target="_blank"><i class="fa-brands fa-artstation"></i></a>
-                        <a href="https://www.linkedin.com/tareqitos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/tareqitos" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-experience">
-                <div class="experience-container-wrapper">
-                    <h1>Experiences</h1>
-                    <div class="experience-container">
-                        <div class="experience-container-items">
-                            <div class="experience-items" id="exp-item-1">
-                                <h2>3D Artist at Mindforce Game Lab</h2>
-                                <p>Göteborg, Sweden 🇸🇪</p>
-                                <p>May 2022 - June 2023</p>
-                            </div>
-                            <div class="experience-items" id="exp-item-2">
-                                <h2>3D Rigging Artist at Walking The Dog</h2>
-                                <p>Brussels, Belgium 🇧🇪</p>
-                                <p>June 2021 - September 2021</p>
-                            </div>
-                            <div class="experience-items" id="exp-item-3">
-                                <h2>Character Artist at FrostyFroggs</h2>
-                                <p>Brussels, Belgium 🇧🇪</p>
-                                <p>October 2020 - October 2021</p>
-                            </div>
-                            <div class="experience-items" id="exp-item-4">
-                                <h2>Junior Artist at Abstraction</h2>
-                                <p>Valkenswaard, Netherlands 🇳🇱</p>
-                                <p>October 2017 - May 2020</p>
-                            </div>
-                            <div class="experience-items" id="exp-item-5">
-                                <h2>Intership Artist at Abstraction</h2>
-                                <p>Valkenswaard, Netherlands 🇳🇱</p>
-                                <p>February 2017 - August 2017</p>
-                            </div>
+                        <div class="experience-items" id="exp-item-2">
+                            <h2>3D Rigging Artist at Walking The Dog</h2>
+                            <p>Brussels, Belgium 🇧🇪</p>
+                            <p>June 2021 - September 2021</p>
                         </div>
-                    </div>
-                    <div class="software-container">
-                        <h1>softwares</h1>
-                        <div class="software-icons">
-                            <img src="img/resume/soft/maya.png" alt="Autodesk Maya" title="Autodesk Maya">
-                            <img src="img/resume/soft/zbrush.png" alt="Zbrush" title="Zbrush">
-                            <img src="img/resume/soft/blender.png" alt="Blender" title="Blender">
-                            <img src="img/resume/soft/unity.png" alt="Unity" title="Unity">
-                            <img src="img/resume/soft/unreal.png" alt="Unreal Engine" title="Unreal Engine">
-                            <img src="img/resume/soft/psd.png" alt="Photoshop" title="Photoshop">
-                            <img src="img/resume/soft/ai.png" alt="Illustrator" title="Illustrator">
-                            <img src="img/resume/soft/id.png" alt="InDesign" title="InDesign">
-                            <img src="img/resume/soft/pr.png" alt="Premiere Pro" title="Premiere Pro">
-                            <img src="img/resume/soft/ae.png" alt="After Effects" title="After Effects">
+                        <div class="experience-items" id="exp-item-3">
+                            <h2>Character Artist at FrostyFroggs</h2>
+                            <p>Brussels, Belgium 🇧🇪</p>
+                            <p>October 2020 - October 2021</p>
+                        </div>
+                        <div class="experience-items" id="exp-item-4">
+                            <h2>Junior Artist at Abstraction</h2>
+                            <p>Valkenswaard, Netherlands 🇳🇱</p>
+                            <p>October 2017 - May 2020</p>
+                        </div>
+                        <div class="experience-items" id="exp-item-5">
+                            <h2>Intership Artist at Abstraction</h2>
+                            <p>Valkenswaard, Netherlands 🇳🇱</p>
+                            <p>February 2017 - August 2017</p>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="section-production">
-                <div class="production-container">
-                    <h1>Productions</h1>
-                    <div class="production-grid">
-                        <div class="production-items" id="prod-item-1">
-                            <img src="img/resume/prod/prod-fig.png" alt="poster of Fig, a game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2023</p>
-                                    <p>Fig - A playtient journey</p>
-                                    <p>Mindforce Game Lab</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-2">
-                            <img src="img/resume/prod/prod-stork.jpg" alt="poster of Richard the Stork, a movie">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2023</p>
-                                    <p>Richard the Stork 2</p>
-                                    <p>Walking the Dog</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-3">
-                            <img src="img/resume/prod/prod-tr3d.png" alt="poster of Tiger Run 3D, a mobile game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2021</p>
-                                    <p>Tiger Run 3D</p>
-                                    <p>FrostyFroggs</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-4">
-                            <img src="img/resume/prod/prod-shadow.jpg" alt="poster of Shadowgate, a game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2019</p>
-                                    <p>Shadowgate</p>
-                                    <p>Abstraction</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-5">
-                            <img src="img/resume/prod/prod-citadel.jpg" alt="poster of Citadel, a game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2018</p>
-                                    <p>Citadel - Forged with Fire</p>
-                                    <p>Abstraction</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-6">
-                            <img src="img/resume/prod/prod-8bit.jpg" alt="poster of Anthology 8-bit, a game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2017</p>
-                                    <p>8-bit Adventure Anthology</p>
-                                    <p>Abstraction</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="production-items" id="prod-item-7">
-                            <img src="img/resume/prod/prod-ark.png" alt="poster of Ark, a game">
-                            <div class="production-info">
-                                <div class="production-info-bg"></div>
-                                <div class="production-info-text">
-                                    <p>2017</p>
-                                    <p>Ark: Survival Evolved Aberration</p>
-                                    <p>Abstraction</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="software-container">
+                    <h1>softwares</h1>
+                    <div class="software-icons">
+                        <img src="img/resume/soft/maya.png" alt="Autodesk Maya" title="Autodesk Maya"> <img
+                            src="img/resume/soft/zbrush.png" alt="Zbrush" title="Zbrush">
+                        <img src="img/resume/soft/blender.png" alt="Blender" title="Blender">
+                        <img src="img/resume/soft/unity.png" alt="Unity" title="Unity">
+                        <img src="img/resume/soft/unreal.png" alt="Unreal Engine" title="Unreal Engine">
+                        <img src="img/resume/soft/psd.png" alt="Photoshop" title="Photoshop">
+                        <img src="img/resume/soft/ai.png" alt="Illustrator" title="Illustrator">
+                        <img src="img/resume/soft/id.png" alt="InDesign" title="InDesign">
+                        <img src="img/resume/soft/pr.png" alt="Premiere Pro" title="Premiere Pro">
+                        <img src="img/resume/soft/ae.png" alt="After Effects" title="After Effects">
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer-items">
-                <p>© All rights reserved - Tareqitos</p>
-                <div class="footer-links">
-                    <a href="https://www.artstation.com/tareqitos" target="_blank"><i class="fa-brands fa-artstation"></i></a>
-                    <a href="https://www.linkedin.com/tareqitos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/tareqitos" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <p>Top</p>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <section class="section-production">
+            <div class="production-container">
+                <h1>Productions</h1>
+                <div class="production-grid">
+                    <div class="production-items" id="prod-item-1">
+                        <img src="img/resume/prod/prod-fig.jpg" alt="poster of Fig, a game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2023</p>
+                                <p>Fig - A playtient journey</p>
+                                <p>Mindforce Game Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-2">
+                        <img src="img/resume/prod/prod-stork.jpg" alt="poster of Richard the Stork, a movie">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2023</p>
+                                <p>Richard the Stork 2</p>
+                                <p>Walking the Dog</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-3">
+                        <img src="img/resume/prod/prod-tr3d.jpg" alt="poster of Tiger Run 3D, a mobile game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2021</p>
+                                <p>Tiger Run 3D</p>
+                                <p>FrostyFroggs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-4">
+                        <img src="img/resume/prod/prod-shadow.jpg" alt="poster of Shadowgate, a game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2019</p>
+                                <p>Shadowgate</p>
+                                <p>Abstraction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-5">
+                        <img src="img/resume/prod/prod-citadel.jpg" alt="poster of Citadel, a game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2018</p>
+                                <p>Citadel - Forged with Fire</p>
+                                <p>Abstraction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-6">
+                        <img src="img/resume/prod/prod-8bit.jpg" alt="poster of Anthology 8-bit, a game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2017</p>
+                                <p>8-bit Adventure Anthology</p>
+                                <p>Abstraction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production-items" id="prod-item-7">
+                        <img src="img/resume/prod/prod-ark.jpg" alt="poster of Ark, a game">
+                        <div class="production-info">
+                            <div class="production-info-bg"></div>
+                            <div class="production-info-text">
+                                <p>2017</p>
+                                <p>Ark: Survival Evolved Aberration</p>
+                                <p>Abstraction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-items">
+            <p>© All rights reserved - Tareqitos</p>
+            <div class="footer-links">
+                <a href="https://www.artstation.com/tareqitos" target="_blank"><i
+                        class="fa-brands fa-artstation"></i></a>
+                <a href="https://www.linkedin.com/tareqitos" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/tareqitos" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>

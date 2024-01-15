@@ -1,0 +1,83 @@
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 50px auto;
+    transition: all .2s;
+}
+
+.project-infos {
+    position: sticky;
+    top: 5vh;
+    height: 50%;
+    border-right: 1px solid var(--text-color-grey);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+    padding-right: 30px ;
+    transition: all .2s;
+}
+
+.project-pictures-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.project-nav {
+    justify-content: flex-end;
+    margin: 0;
+    gap: 10px;
+    opacity: 0;
+    display: none;
+    transition: opacity .2s ease;
+}
+
+.project-items {
+    width: 900px;
+    border-radius: 5px;
+    transition: transform .2s, border-radius .2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#infos-name {
+    font-size: 2em;
+}
+
+img,
+video {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1);
+}
+
+img,
+video,
+iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    transition: transform .2s ease;
+}
+
+iframe {
+    height: 400px;
+}
+
+.project-items:hover img,
+.project-items:hover video{
+    transform: scale(1.06);
+}
+
+.project-suggestions {
+    position: sticky;
+    top: 50px;
+    background-color: tomato;
+    width: 500px;
+    height: 700px;
+}

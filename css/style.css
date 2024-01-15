@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --theme-color: #6DD5D7;
+    --text-color: #1f1f1f;
+    --text-color-grey: #949494;
+}
+
+html {
+    color: var(--text-color);
+    position: relative;
+    min-height: 100%;
+    transition: all .2s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+h1,
+.grid {
+    transition: all .2s;
+}
+
+.title {
+    border-bottom: 1px solid #acacac;
+    margin: 50px 20px 0 20px;
+}
+
+.title-name {
+    font-family: 'Montserrat', 'Poppins', 'Arial';
+    font-size: 3em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.title-work-title {
+    position: relative;
+    bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+
+    margin: 20px 0 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.nav a {
+    position: relative;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid rgb(190, 190, 190);
+    text-decoration: none;
+    transition: all .1s;
+}
+
+.nav a::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--theme-color);
+    transition: all .1s;
+}
+
+.nav a:hover {
+    color: white;
+    border: 1px solid var(--theme-color);
+}
+
+.nav a:hover:after {
+    height: 100%;
+}
+
+main {
+    padding: 0 40px;
+    margin: 0 0 100px 0;
+}
+
+/* ======== FOOTER ========= */
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 20px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    border-top: 1px solid #acacac;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    transition: transform .1s ease;
+}
+
+.footer-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-links i {
+    color: white;
+    background-color: var(--text-color-grey);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.footer-links i:hover {
+    background-color: var(--theme-color);
+}

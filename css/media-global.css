@@ -1,0 +1,65 @@
+/* =================================== GLOBAL ==================================== */
+/* ==================================== 1024 ==================================== */
+
+/* ==================================== 900 ==================================== */
+
+@media screen and (max-width: 900px) {
+
+    .footer-items {
+        padding: 15px;
+        text-align: left;
+        font-size: .9em;
+    }
+}
+
+/* ==================================== 750 ==================================== */
+
+@media screen and (max-width: 750px) {
+
+}
+
+/* ==================================== 550 ==================================== */
+
+@media screen and (max-width: 550px) {
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a::after {
+        display: none;
+    }
+
+    .nav a:hover {
+        color: var(--theme-color);
+    }
+
+    .title-name {
+        font-size: 2em;
+    }
+
+    .title-work-title {
+        font-size: .9em;
+    }
+
+    .footer-items {
+        padding: 10px;
+    }
+
+    .footer-items p {
+        font-size: .9em;
+    }
+
+    .footer-links {
+        gap: 5px;
+    }
+}
+
+/* ==================================== 375, 450 ==================================== */
+
+@media screen and (max-width: 450px), (max-width: 375px) {
+
+    .footer-items p {
+        font-size: .75em;
+    }
+}

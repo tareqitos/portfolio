@@ -1,0 +1,170 @@
+/* =================================== RESUME ==================================== */
+/* ==================================== 1024 ==================================== */
+
+@media screen and (max-width: 1024px) {
+    .resume-about-container {
+        padding: 60px 80px;
+    }
+
+    .resume-about-text-container {
+        gap: 10px;
+    }
+}
+
+/* ==================================== 900 ==================================== */
+
+@media screen and (max-width: 900px) {
+
+    main {
+        margin-bottom: 120px;
+    }
+    
+    /* == RESUME == */
+    .resume-about-container {
+        flex-direction: column;
+        align-items: center;;
+    }
+
+    .resume-about-text-container {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .resume-about-text-name {
+        text-align: center;
+    }
+
+    .resume-about-picture img {
+        width: 250px;
+    }
+
+    .resume-about-links {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    /* == EXPERIENCE == */
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .section-experience {
+        width: 650px;
+    }
+
+    /* == PRODUCTION == */
+
+    .production-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ==================================== 750 ==================================== */
+
+@media screen and (max-width: 750px) {
+
+    /* == RESUME == */
+
+    .resume-about-container {
+        padding: 40px 40px;
+    }
+
+    .resume-about-text-container {
+        align-items: center;
+        width: auto;
+        gap: 10px;
+    }
+
+    /* == EXPERIENCE == */
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .section-experience {
+        width: 550px;
+    }
+
+    .software-icons {
+        gap: 5px;
+    }
+
+    /* == PRODUCTION == */
+
+    .production-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==================================== 550 ==================================== */
+
+@media screen and (max-width: 550px) {
+
+    /* == RESUME ==*/
+
+
+    .resume-links span {
+        display: none;
+    }
+
+    /* == EXPERIENCE ==*/
+
+    .section-experience {
+        width: 450px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    .software-container {
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 2px;
+    }
+
+    /* == PRODUCTION == */
+
+    .production-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==================================== 375 ==================================== */
+
+@media screen and (max-width: 450px), (max-width: 375px) {
+
+    /* == PRODUCTION == */
+
+    .section-experience {
+        width: 380px;
+        margin: 60px auto;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    .software-container {
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 2px;
+    }
+
+    .software-icons {
+        flex-wrap: wrap;
+    }
+
+    /* == PRODUCTION == */
+
+    .production-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
