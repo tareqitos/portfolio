@@ -28,35 +28,51 @@ function ShowNavButtons() {
 
 }
 
-
-/*window.transitionToPage = function(href) {
-    document.querySelector('main').style.opacity = 0;
-    document.querySelector('main').style.transform = "translateY(-100px)";
-    setTimeout(function (){
-        window.location.href = href;
-    },1000);
-};
-
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('main').style.opacity = 1;
-    document.querySelector('main').style.transform = "translateY(0px)";
-});
-*/
-
 $(document).ready(function() {
-    $(".portfolio-items").css("transform", "scale(1)");
-    $("main").fadeIn(350);
+    initPage();
+
+    // Gestionnaire d'événements pour détecter la réaffichage de la page depuis le cache du navigateur
+    $(window).on("pageshow", function(event) {
+        // Vérifie si l'événement est causé par le bouton précédent
+        if (event.originalEvent.persisted) {
+            initPage();
+        }
+    });
 
     $("a.transition").click(function(event) {
         event.preventDefault();
         linkLocation = this.href;
 
-        $(".portfolio-items").css("transform", "scale(.7)");
-        $("main").fadeOut(150, redirectPage);
+        $("main").fadeOut(250, function() {
+            $("main").css("display", "none");
+            $("footer").css("display", "none");
+            redirectPage();
+        });
+
     });
+
+    $("a.transition-project").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+
+        $("main").fadeOut(250, function() {
+            $("main").css("display", "none");
+            $("footer").css("display", "none");
+            redirectPage();
+        });
+
+        $(".portfolio-items").css("transform", "scale(.7)");
+    });
+
 
     function redirectPage() {
         window.location = linkLocation;
     }
-});
 
+    function initPage() {
+        $("main").css("display", "none");
+        $("footer").css("display", "block");
+        $(".portfolio-items").css("transform", "scale(1)");
+        $("main").fadeIn(600);
+    }
+});
