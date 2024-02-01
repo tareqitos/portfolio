@@ -9,9 +9,18 @@
         max-width: 1200px;
     }
 
+    .half {
+        width: 700px;
+    }
+
+    .triple {
+        width: 700px;
+    }
+
     .project-items {
         width: 700px;
     }
+    
 }
 
 /* ==================================== 1024 ==================================== */
@@ -27,6 +36,15 @@
     .project-items {
         width: unset;
     }
+
+    .half{
+        width: unset;
+    }
+
+    .triple{
+        width: unset;
+    }
+
     
     .project-infos {
         position: unset;
@@ -50,6 +68,15 @@
 /* ==================================== 750 ==================================== */
 
 @media screen and (max-width: 750px) {
+    .half,
+    .triple {
+        flex-direction: column;
+    }
+    
+    .half .project-items,
+    .triple .project-items {
+        width: unset;
+    }
 
 }
 
