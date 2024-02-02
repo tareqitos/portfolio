@@ -56,7 +56,6 @@ h1{
     text-align: left;
     font-size: 1.8em;
     font-weight: 200;
-    
     margin-bottom: 20px;
 }
 
@@ -306,7 +305,7 @@ h1{
 
 .portfolio-grid-env {
     display: grid;
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
 }
